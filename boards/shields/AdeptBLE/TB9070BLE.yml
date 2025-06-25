@@ -1,9 +1,9 @@
 file_format: "1"
-id: AdeptBLE
-name: AdeptBLE
+id: TB9070BLE
+name: TB9070BLE
 type: shield
 url: https://github.com/taichan1113/mouse-test
-requires: [seeeduino_xiao_ble]
+requires: [nice_nano_v2]
 features:
   - keys
   - pointer

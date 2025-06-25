@@ -1,7 +1,7 @@
-if SHIELD_ADEPTBLE
+if SHIELD_TB9070BLE
 
 config ZMK_KEYBOARD_NAME
-    default "AdeptBLE"
+    default "TB9070BLE"
 
 endif
 
