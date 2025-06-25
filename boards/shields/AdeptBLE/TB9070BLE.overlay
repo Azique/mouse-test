@@ -34,36 +34,38 @@
 
     
 
-    // physical_layout0: physical_layout_0 {
-    //     compatible = "zmk,physical-layout";
-    //     display-name = "Default Layout";
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
 
-    //     transform = <&default_transform>;
-    //     kscan = <&kscan0>;
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
 
-    //     keys  //                     w   h    x    y     rot    rx    ry
-    //         = <&key_physical_attrs  50 100    0    0       0     0     0>
-    //         , <&key_physical_attrs  50  50   50    0       0     0     0>
-    //         , <&key_physical_attrs  50  50  100    0       0     0     0>
-    //         , <&key_physical_attrs  50 100  150    0       0     0     0>
-    //         , <&key_physical_attrs  75 100    0  100       0     0     0>
-    //         , <&key_physical_attrs  75 100  125  100       0     0     0>
-    //         ;
-    // };
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs  50  50    0    0       0     0     0>
+            , <&key_physical_attrs  50  50   50    0       0     0     0>
+            , <&key_physical_attrs  50  50  100    0       0     0     0>
+            , <&key_physical_attrs  50  50  150    0       0     0     0>
+            , <&key_physical_attrs  50  50  200  100       0     0     0>
+            , <&key_physical_attrs  50  50  250  100       0     0     0>
+            , <&key_physical_attrs  50  50  300  100       0     0     0>
+            , <&key_physical_attrs  50  50  350  100       0     0     0>
+            ;
+    };
 
-    // position_map {
-    //     compatible = "zmk,physical-layout-position-map";
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
 
-    //     complete;
+        complete;
 
-    //     layout1: layout1 {
-    //         physical-layout = <&physical_layout0>;
-    //         positions
-    //             = < 0  1  2  3>
-    //             , < 4        5>
-    //             ;
-    //     };
-    // };
+        layout1: layout1 {
+            physical-layout = <&physical_layout0>;
+            positions
+                = < 0  1  2  3>
+                , < 4        5>
+                ;
+        };
+    };
 };
 
 &gpio0 {
