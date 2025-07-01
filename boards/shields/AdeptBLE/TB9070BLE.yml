@@ -2,7 +2,7 @@ file_format: "1"
 id: TB9070BLE
 name: TB9070BLE
 type: shield
-url: https://github.com/taichan1113/mouse-test
+url: https://github.com/Azique/mouse-test
 requires: [nice_nano_v2]
 features:
   - keys
