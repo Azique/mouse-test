@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: badjeff
-      url-base: hhttps://github.com/trentrand
+    - name: trentrand
+      url-base: https://github.com/trentrand
     # - name: cyboard
     #   url-base: https://github.com/Cyboard-DigitalTailor
   projects:
