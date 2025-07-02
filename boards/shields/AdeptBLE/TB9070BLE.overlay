@@ -83,7 +83,7 @@
         irq-gpios = <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         duplex = <2048>; // required by 3-wire spi
         // cpi = <800>;
-        evt-type = <INPUT_EV_REL>;
+        // evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
 
