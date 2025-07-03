@@ -29,10 +29,30 @@
             , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
-    };
-
-    
+    };  
 };
+
+/ {
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "TB9070BLE";
+
+        kscan = <&kscan0>;
+        transform = <&matrix_transform0>;
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0  100       0     0     0>
+            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300    0       0     0     0>
+            , <&key_physical_attrs 100 100  400    0       0     0     0>
+            , <&key_physical_attrs 100 100  400  100       0     0     0>
+            ;
+    };
+};
+
 
 &gpio0 {
     fastbatcharge: fast-battery-charge {
