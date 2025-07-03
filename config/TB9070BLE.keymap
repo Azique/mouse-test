@@ -52,8 +52,8 @@
     default_layer {
       display-name = "Default";
       bindings = <
-        &none &tog SCRLH &tog SCRLM &mkp MCLK &mkp RCLK
-        &mkp LCLK  &mkp MB4   &mkp MB5 &none &tog SNIPE
+        &tog SCRLH &tog SCRLM &mkp MCLK &mkp RCLK
+        &mkp LCLK  &mkp MB4 &mkp MB5 &tog SNIPE
       >;
     };
 
