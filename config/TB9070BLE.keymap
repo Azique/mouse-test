@@ -52,10 +52,11 @@
     default_layer {
       display-name = "Default";
       bindings = <
-        &ltm BLTH MB4 &ltm DEVICE MB5 &mkp MCLK &lth SCRLM RCLK
-        &mkp LCLK                               &mto SCRLM SNIPE
+          &tog SCRLH &tog SCRLM &mkp MCLK &mkp RCLK
+        &mkp LCLK &mkp MB4 &mkp MB5  &tog SNIPE
       >;
     };
+
     scroll_tap_layer {
       display-name = "Scroll-Momentary";
       bindings = <
